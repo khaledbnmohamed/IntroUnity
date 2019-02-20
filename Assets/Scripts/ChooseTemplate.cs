@@ -5,6 +5,13 @@ using UnityEngine;
 public class ChooseTemplate : MonoBehaviour {
 
     public QRdataHandler QRscriptHandler;
+
+    private static Quaternion Change(float x, float y, float z)
+    {
+        //Return the new Quaternion
+        return new Quaternion(x, y, z, 1);
+    }
+
     private void Update()
     {
        
@@ -52,6 +59,7 @@ public class ChooseTemplate : MonoBehaviour {
 
             case "0":
                 gameObject.transform.GetChild(0).gameObject.transform.localPosition = new Vector3(0.61f, 3.57f, 3.37f); // cube 
+                gameObject.transform.GetChild(0).gameObject.transform.localRotation = Change(0f, 180f, 0f);  // cube 
 
                 gameObject.transform.GetChild(0).gameObject.SetActive(false); // cube 
 

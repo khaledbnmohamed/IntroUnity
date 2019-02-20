@@ -759,7 +759,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911586359}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.39, y: 3.57, z: 2.97}
+  m_LocalPosition: {x: 0.39, y: 2.92, z: 2.97}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 460641467}
@@ -1306,10 +1306,9 @@ GameObject:
   - component: {fileID: 883834873}
   - component: {fileID: 883834872}
   - component: {fileID: 883834878}
-  - component: {fileID: 883834879}
   m_Layer: 0
   m_Name: ImageTarget
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1424,19 +1423,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 25.141937, y: 0, z: 24.538929}
   m_Center: {x: -0.2571087, y: 0, z: 0.21729851}
---- !u!114 &883834879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 883834871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94191ad1c12720445bf5d83e2d0ad24a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  com: {x: 0, y: 0, z: 0}
-  rb: {fileID: 1911586360}
 --- !u!1 &936127600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2942,6 +2928,7 @@ GameObject:
   - component: {fileID: 1911586361}
   - component: {fileID: 1911586360}
   - component: {fileID: 1911586362}
+  - component: {fileID: 1911586363}
   m_Layer: 0
   m_Name: SportCar
   m_TagString: Untagged
@@ -2956,10 +2943,10 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911586359}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 50
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -2995,6 +2982,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.702063, y: 10.361929, z: 26.120079}
   m_Center: {x: -0.53234756, y: 2.3451972, z: 1.7147076}
+--- !u!114 &1911586363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911586359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4c76a8ca134c84ab15fa1d8aa51b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StrengthOfAttraction: 20
 --- !u!1 &1924050297
 GameObject:
   m_ObjectHideFlags: 0
