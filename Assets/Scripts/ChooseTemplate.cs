@@ -51,6 +51,8 @@ public class ChooseTemplate : MonoBehaviour {
 
 
             case "0":
+                gameObject.transform.GetChild(0).gameObject.transform.localPosition = new Vector3(0.61f, 3.57f, 3.37f); // cube 
+
                 gameObject.transform.GetChild(0).gameObject.SetActive(false); // cube 
 
                 break;

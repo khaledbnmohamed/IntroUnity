@@ -45,6 +45,7 @@ public class SimpleDemo : MonoBehaviour {
             Image2.texture = BarcodeScanner.Camera.Texture;
             Image2.transform.localEulerAngles = BarcodeScanner.Camera.GetEulerAngles();
             Image2.transform.localScale = BarcodeScanner.Camera.GetScale();
+
             // Keep Image Aspect Ratio
             var rect = Image1.GetComponent<RectTransform>();
             var newHeight = rect.sizeDelta.x * BarcodeScanner.Camera.Height / BarcodeScanner.Camera.Width;

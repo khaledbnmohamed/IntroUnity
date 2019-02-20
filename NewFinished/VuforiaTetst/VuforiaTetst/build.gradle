@@ -46,7 +46,7 @@ android {
     }
 
     aaptOptions {
-        noCompress '.unity3d', '.ress', '.resource', '.obb', 'vuforia/vuforiamars_images.dat', 'vuforia/vuforiamars_images.xml'
+        noCompress '.unity3d', '.ress', '.resource', '.obb', 'vuforia/qr.dat', 'vuforia/qr.xml'
     }
 
     buildTypes {
