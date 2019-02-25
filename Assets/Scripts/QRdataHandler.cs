@@ -9,6 +9,7 @@ using UnityEngine;
 /// 1 ->  facebook page
 /// 2 -> twitter
 /// 3 -> phone
+/// 4 ->  Youtube link
 /// </summary>
 
 public class QRdataHandler : MonoBehaviour
@@ -70,7 +71,16 @@ public class QRdataHandler : MonoBehaviour
     {
 
         Application.OpenURL("https://twitter.com/@" + ExtractedValues[2]);
+
     }
+
+    public void onClickYoutube()
+    {
+
+        Application.OpenURL("https://www.youtube.com/watch?v=" + ExtractedValues[4]);
+
+    }
+
     public void onClickPhone()
     {
 

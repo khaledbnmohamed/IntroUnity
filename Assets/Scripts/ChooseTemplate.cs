@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChooseTemplate : MonoBehaviour {
 
     public QRdataHandler QRscriptHandler;
+    public GameObject VideoPlayerCube;
 
     private static Quaternion Change(float x, float y, float z)
     {
@@ -46,6 +47,7 @@ public class ChooseTemplate : MonoBehaviour {
 
 
         }
+        VideoPlayerCube.SetActive(true);
     }
 
     public void DeactivateTemplate()
@@ -82,6 +84,8 @@ public class ChooseTemplate : MonoBehaviour {
 
 
         }
+        VideoPlayerCube.SetActive(false);
+
     }
 
 }
